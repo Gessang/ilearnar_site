@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ilearnar</title>
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/css/register.css">
+  <link rel="stylesheet" href="/css/aos.css">
+  <link rel="stylesheet" href="/fontawesome-free-6.4.0-web/css/all.min.css">
+</head>  
+<body>
+  <!----------REGISTRATION TEXT CONTAINER FOR LEARNERS------------->
+<section class="register-text-container" >
+  <div class="register-page-title"><h1>Ready to join a class?</h1></div>
+  <div class="register-page-text">
+    <p>We are thrilled to embark on this journey with you and support you in honing your 
+      English language communication skills. Our team is dedicated to ensuring that you 
+      excel in your English language abilities. 
+         <span id="dots4">...</span><span id="more4">
+          Whether you're looking to enhance your speaking, writing, or reading skills, 
+          we have a range of tailored instructions and resources to meet your specific needs.
+          Please kindly fill out the form below and submit it to get started. <br> <br>
+          You can't fill the form? Don’t worry! You can speak with us directly in your 
+          preferred language by using the 'Call' button below and we'll be happy to assist you.          
+    </span></p> 
+    <button onclick="myFunction4()" id="moreBtn4">Read more...</button>
+   </div>
+<!----------CONTACT BUTTON FOR LEARNERS------------->
+<div class="register-contact-links">
+<div class="register-contact-buttons">
+  <a href="tel:08125428004" class="call">
+    <i class="fa fa-phone"></i> Call</a>
+    <a href="https://wa.me/08125428004" class="whatsapp">
+      <i class="fab fa-whatsapp"></i>WhatsApp </a>
+  <a href="mailto:ilearnablog@gmail.com?subject=Hello" class="email">
+      <i class="fa fa-envelope"></i> Email</a>
+</div>
+</div>
+</section>
+<!-------------LEARNERS REGISTRATION FORM------------------>
+<button class="register-btn" id="registerButton" type="button">Register</button>
+
+<form id="registrationForm">
+<h2>Registration Form</h2>
+  <label for="title">Title:</label>
+  <select id="title" name="title">
+    <option value="Mr">Mr</option>
+    <option value="Mrs">Mrs</option>
+    <option value="Miss">Miss</option>
+    <option value="Ms">Ms</option>
+  </select>
+  
+  <label for="firstName">First Name:</label>
+  <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+  
+  <label for="surname">Surname:</label>
+  <input type="text" id="surname" name="surname" placeholder="Enter your last name" required>
+  
+  <label for="gender">Gender:</label>
+  <select id="gender" name="gender">
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    <option value="Other">Other</option>
+  </select>
+  
+  <label for="ageRange">Age Range:</label>
+  <select id="ageRange" name="ageRange">
+    <option value="9-17">9-17</option>
+    <option value="18-25">18-25</option>
+    <option value="26-30">26-30</option>
+    <option value="31-35">31-35</option>
+    <option value="36-40">36-40</option>
+    <option value="41-45">41-45</option>
+    <option value="46 and above">46 and above</option>
+  </select>
+  
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Enter your email address">
+  
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+  
+  <label for="whatsappGroup">Should you be added to the Whatsapp group?</label>
+  <select id="whatsappGroup" name="whatsappGroup">
+    <option value="Yes">Yes</option>
+    <option value="No">No</option>
+  </select>
+  
+  <label for="address">Residential Address:</label>
+  <textarea id="address" name="address" placeholder="Enter address"required></textarea>
+  
+  <label for="city">City/Town of Residence:</label>
+  <input type="text" id="city" name="city" required placeholder="Enter city/town/village">
+  
+  <label for="localGovernment">Local Government of Residence:</label>
+  <input type="text" id="localGovernment" name="localGovernment" placeholder="Enter local government" required>
+  
+  <label for="state">State of Residence:</label>
+  <input type="text" id="state" name="state" placeholder="Enter state" required>
+  
+  <label for="education">Level of Education:</label>
+  <select id="education" name="education">
+    <option value="Primary">Primary</option>
+    <option value="Secondary">Secondary</option>
+    <option value="Tertiary">Tertiary</option>
+    <option value="none">None</option>
+  </select>
+  
+  <label for="learningType">Learning Type:</label>
+  <select id="learningType" name="learningType">
+    <option value="Online">Private online class</option>
+    <option value="Physical">Private physical class</option>
+    <option value="Online Group Class">Online Group Class</option>
+    <option value="Physical Group Class">Physical Group Class</option>
+  </select>
+  
+  <label for="startDate">Start Date:</label>
+  <input type="date" id="startDate" name="startDate" required>
+  
+  <label for="startTime">Start Time:</label>
+  <input type="time" id="startTime" name="startTime" required>
+  
+  <label for="relationship">Relationship with Learner:</label>
+  <select id="relationship" name="relationship">
+    <option value="Self">I'm the learner</option>
+    <option value="Parent">Parent</option>
+    <option value="Brother">Brother</option>
+    <option value="Sister">Sister</option>
+    <option value="Sister">Wife</option>
+    <option value="Sister">Husband</option>
+    <option value="Sister">Friend</option>
+    <option value="Sister">Sibling</option>
+  </select>
+  
+  <label for="hearAboutUs">How did you hear about us?</label>
+  <select id="hearAboutUs" name="hearAboutUs">
+    <option value="Website">Website</option>
+    <option value="Social Media">Social Media</option>
+    <option value="Word of Mouth">Word of Mouth</option>
+    <option value="Advertisement">Advertisement</option>
+    <option value="Advertisement">Radio</option>
+    <option value="Advertisement">Television</option>
+
+  </select>
+  
+  <button type="submit">Register</button>
+</form>
+<!---------DYNAMIC FOOTER------------------>
+<footer></footer>
+<!---------JAVASRIPT FILE SOURCE AND CODES------------------>
+<script src="/javascript/jquery-3.6.0.min.js"></script>
+<script src="/javascript/register.js"></script>
+<script src="/javascript/common.js"></script>
+</body>
+</html>
+

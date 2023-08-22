@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+}
+
+html, body{
+    scroll-behavior: smooth;
+    font-size: 100%;
+    overflow-x: hidden;
+}
+
+.class-card-container{
+    margin-top: 0;
+} 
+.class-banner{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/images/english-class.jpg');
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.class-banner-text{
+ color: #fff;
+ margin: 10rem auto;
+
+}
+.class-banner h2{
+    padding: 0 5%;
+}
+.class-banner-text p{
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 0 20%;
+}
+.class-banner-text a{
+    color: #000;
+    background-color: #facd04;
+    padding: 10px;
+    border-radius: 20px;
+}
+.class-banner-text a:hover{
+    color: #fff;
+    background-color: #29103d;
+    transition: 1s ease;
+}
+.class-info-section{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+ align-items:  center;
+ flex-wrap: wrap;
+ background-color: #f5f5f5;
+    
+}
+.class-details{
+    text-align: center;
+    align-items: center;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    background-color: #fff;
+    padding: 2rem;
+}
+.class-details img{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 1.5rem;
+}
+.class-details p{
+    font-size: 1.1rem;
+    text-align: left;
+    padding: 0 2rem;
+}
+.class-details h1{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+.class-details a{
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    color: #fff;
+    padding: 0.5rem;
+    margin-top: 1.5rem;
+    background-color: #29103d;
+    border: 1px solid #29103d;
+}
+.class-details a:hover{
+    transition: 0.3s ease-in-out;
+    background-color: transparent;
+    color: #29103d;
+}
+.class-details .coming-soon{
+    font-style: italic;
+    margin-bottom: 0;
+}
+#more, #more2, #more3{
+    display: none;
+}
+#moreBtn, #moreBtn2, #moreBtn3{
+    padding: 0.3rem 0.5rem;
+    border: none;
+    font-size: 1.3rem;
+    color: #8f8f8f;
+    background: none;
+}
+#moreBtn:hover,#moreBtn2:hover, #moreBtn3:hover{
+    color: #29103d;
+    transition: 0.3s ease;
+}
+.services{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3rem;
+}
+.service-container{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+ align-items:  center;
+ flex-wrap: wrap;
+ background-color: #e9ecf3;
+}
+.service-details{
+    text-align: center;
+    align-items: center;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    background-color: #fff;
+    padding: 2rem;
+}
+.service-details img{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 1.5rem;
+}
+.service-details p{
+    font-size: 1rem;
+    text-align: left;
+    padding: 1rem 2rem;
+}
+.service-details h1{
+    font-size: 1.3rem;
+}
+.service-details a{
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 0.5rem;
+    margin-top: 1.5rem;
+    background-color: #29103d;
+    border: 1px solid #29103d;
+}
+.service-details a:hover{
+    transition: 0.3s ease-in-out;
+    background-color: transparent;
+    color: #29103d;
+}
+.service-details .coming-soon{
+    font-style: italic;
+}
+.contact{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+.contact-title{
+    position: relative;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.contact-title h2{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.contact-title::after{
+    content: "Get in touch";
+    font-size: 1rem;
+    background: #fff;
+    bottom: -0.7rem;
+    padding: 0.4rem;
+    font-weight: bold;
+    align-items: center;
+    color: #200000;
+}
+.contact-info{
+    display: flex;
+    flex-direction: wrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contact-info .office-address{
+    display: flex;
+    color: #000;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    text-align: center;
+    flex-direction: column;
+}
+.contact-info .office-address i{
+    color: #29103d;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+.contact-info .contact-text{
+    padding: 1rem 20rem;
+    font-size: 1rem;
+}
+.contact-info .office-address p{
+    font-size: 1.1rem;
+}
+.contact-info .contact-link-icons{
+    margin-top: 2rem;
+}
+.contact-info .contact-link-icons a{
+    background-color: #29103d;
+    color: #fff;
+    padding: 0.6rem;
+    margin: 0 0.5rem;
+    border-radius: 0.3rem;
+}
+.contact-info .contact-link-icons i{
+    padding: 0 0.3rem;
+    font-size: 1.1rem;
+}
+.contact-info .contact-link-icons a:hover{
+    background-color: transparent;
+    border: 1px solid #29103d;
+    transition: 0.3s ease;
+    color: #29103d;
+}
+@media only screen and ( max-width: 1200px){
+   
+.class-details,
+.service-details{
+    width: 500px;
+}
+.contact-info .contact-text{
+    padding: 2rem 10rem;
+}
+}
+@media only screen and ( max-width: 1024px){
+    .class-details,
+    .service-details{
+        width: 450px;
+} 
+.contact-info .contact-text{
+    padding: 2rem 10rem;
+}
+}
+@media only screen and ( max-width: 920px){
+    .class-details,
+    .service-details{
+        width: 80%;
+} 
+.contact-info .contact-text{
+    padding: 2rem 7%;
+}
+}
+@media only screen and ( max-width: 768px){
+    .class-details,
+    .service-details{
+        width: 95%;
+} 
+.contact-info .contact-text{
+    padding: 2rem 6%;
+}
+.class-details p{
+    font-size: 17px;
+}
+.service-details img, .class-details img{
+    width: 100px;
+    height: 100px;
+}
+}
+@media only screen and ( max-width: 660px){
+    .class-details,
+    .service-details{
+        width: 98%;
+}
+.class-banner-text p{
+    padding: 0 10%;
+} 
+.contact-info .contact-text{
+    padding: 2rem 4%;
+}
+}
+@media only screen and ( max-width:400px){
+
+    .contact-info .contact-link-icons{
+       display: flex;
+    }
+    .contact-info .contact-link-icons a{
+        margin: 0 0.4rem;
+        border-radius: 0.2rem;
+        padding: 0.3rem;
+    }
+    .contact-info .contact-link-icons i{
+        margin-right: 0.3rem;
+        font-weight: normal;
+    }
+    
+} 

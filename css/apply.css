@@ -1,0 +1,245 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html, body{
+  scroll-behavior: smooth;
+  font-size: 100%;
+  width: 100vw;
+}
+
+.tutor-text-condition{
+  margin-top: 2.5rem;
+  padding: 2rem 10rem;
+}
+.tutors-text-title, 
+.read-condition{
+  margin-bottom: 0.3rem;
+  text-align: center;
+}
+.read-condition{
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+.tutor-text{
+  font-size: 1.2rem;
+}
+.tutor-text p{
+  font-size: 1.2rem;
+}
+.tutor-text p .condition{
+padding: 2rem 0 2rem 0;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.tutor-text .condition h1{
+ font-size: 1.3rem;
+}
+
+#more5{
+  display: none;
+}
+#moreBtn5{
+  padding: 0.3rem 0.5rem;
+  border: none;
+  font-size: 1.3rem;
+  color: #8f8f8f;
+  background: none;
+}
+ #moreBtn5:hover{
+  color: #29103d;
+  transition: 0.3s ease;
+}
+/*----- TUTORS REGISTRATION SECTION----*/
+.form-Container{
+  margin-top: 4rem;
+  justify-content: center;
+}
+.apply-btn-container{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 1rem 0 4rem 0;
+}
+.apply-btn:hover{
+  background-color: #ffe365;
+  color: #000;
+  transition: 0.3s ease;
+  border: 1px solid #29103d;
+}
+.application-form h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.application-form{
+  max-width: 500px;
+  margin: 0rem auto 6rem auto;
+}
+
+.step {
+  display: none;
+}
+
+.step.active {
+  display: block;
+}
+
+.form-Container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-Container input[type="text"],
+.form-Container input[type="email"],
+.form-Container input[type="tel"],
+.form-Container select,
+.form-Container textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.form-Container textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+Button[type="button"],
+.form-Container button#submitButton[type="submit"] {
+  background-color: #29103d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 1rem;
+}
+Button[type="button"]:hover,
+.form-Container button#submitButton[type="submit"]:hover{
+  background-color: #ffe365;
+  transition: 0.3s ease;
+  color: #000;
+}
+
+ button[type="button"]:hover,
+ button[type="submit"]:hover {
+  background-color: #ffe365;
+  transition: 0.3s ease;
+  color: #000;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.feedback-text{
+  padding: 0 10rem;
+  font-size: 1.2rem;
+}
+.tutor-contact-links{
+  margin: 2.5rem 0 4rem 0;
+  display: flex;
+  justify-content: center;
+}
+.link-details a{
+  margin: 0 1rem;
+  border: 1px #29103d solid;
+  background-color: #29103d;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+.link-details a i{
+  padding: 0 0.2rem;
+  font-weight: bold;
+}
+.link-details a:hover{
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #29103d;
+  color: #29103d;
+  transition: 0.3s ease;
+}
+
+/* Medium screens (601px to 900px) */
+@media screen and (max-width: 1024px){
+  .tutor-text-condition{
+    padding: 2rem 7%;
+  }
+  .feedback-text{
+    padding: 0 7%;
+    font-size: 1.2rem;
+  }
+}
+
+/* Large screens (901px and above) */
+@media screen and (min-width: 901px) {
+  .form-Container label,
+  .form-Container input,
+  .form-Container select,
+  .form-Container textarea {
+    width: 50%;
+  }
+}
+
+/* Medium screens (601px to 900px) */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .form-Container label,
+  .form-Container input,
+  .form-Container select,
+  .form-Container textarea {
+    width: 100%;
+  }
+}
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px){
+  .tutor-text-condition{
+    padding: 2rem 5%;
+  }
+  .feedback-text{
+    padding: 0 5%;
+    font-size: 1.2rem;
+  }
+}
+
+/* Small screens (up to 600px) */
+@media screen and (max-width: 600px) {
+  .form-Container label,
+  .form-Container input,
+  .form-Container select,
+  .form-Container textarea {
+    width: 100%;
+  }
+
+  form {
+    max-width: 100%;
+    margin: 1rem auto 8rem auto;
+   padding: 0 7px;
+ }
+}
+
+@media screen and (max-width: 400px){
+  .tutor-contact-links{
+    display: flex;
+  }
+  .tutor-contact-links .link-details a{
+    margin: 0 0.3rem;
+    border-radius: 0.1rem;
+    padding: 0.2rem;
+  } 
+  .tutor-contact-links .link-details a i{
+    margin-right: 0.3rem;
+    font-weight: 600;
+  }
+}

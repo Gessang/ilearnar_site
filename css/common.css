@@ -1,0 +1,263 @@
+/* Basic styling */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+  body {
+    font-family: sans-serif;
+    font-size: 16px;
+    position: absolute;
+    overflow-x: hidden;
+  }
+  /*---------------- NAVIGATION-MENU -------------------*/
+  header{
+    width: 100vw;
+    background-color: #29103d;
+    height: 5rem;
+  }
+  
+  .navbar{
+  position: fixed;
+  width: 100%;
+  height: 85px;
+  background: #000;
+  font-family: sans-serif;
+  transition: all .3s ease;
+  z-index: 999;
+  padding: 0.2rem 0;
+}
+.navbar.sticky{
+  background: #29103d;
+  padding: 0.2rem 0;
+  transition: 0.3s ease-in;
+  height: 75px;
+}
+.navbar.sticky .logo img{
+  width: 10.5rem;
+  transition: 0.5s ease-in-out;
+}
+.navbar.sticky .menu{
+  margin: -3rem 2.5rem 2rem 0;
+  text-align: right;
+  transition: 0.5s ease-in-out;
+}
+.navbar .logo img{
+  width: 11rem;
+  margin-top: 0.7rem;
+  margin-left: 1.5rem;
+  transition: 0.5s ease-in-out;
+}
+.navbar .menu{
+  margin: -2.8rem 2.5rem 2rem 0;
+  text-align: right;
+}
+.navbar .menu li a{
+  color: #b4b4b4;
+  font-size: 1.3rem;
+  font-weight: 500;
+  display: block;
+}
+.navbar .menu-btn:hover,
+.navbar .menu-btn.active{
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+.navbar .menu li{
+  list-style: none;
+  text-align: right;
+  margin-left: 1.5rem;
+  display: inline-block;
+}
+.menu-icon{
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  z-index: 999;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+.submenu{
+  display: none;
+  background-color: #000;
+  position: absolute;
+  z-index: 1;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  text-align: left;
+  width: 200px;
+}
+.dropdown:hover .submenu{
+  display: block;
+  flex-direction: column;
+  transition: 0.3s ease;
+}
+.submenu li{
+  padding: 0.5rem 0;
+  text-align: left;
+}
+.submenu li a:hover{
+  color: #fff;
+  transition: 0.3s ease;
+}
+/* --------- max-width: 900px -------------- */
+@media only screen and ( max-width: 920px){ 
+  .navbar .menu{
+      display: flex;
+      flex-direction: column;
+      background: #111;
+      text-align: center;
+      width: 100vw;
+      height: 100vh;
+    padding-top: 1.5rem;
+      position: fixed;
+      left: -120%;
+      z-index: -1;
+      margin-top: 0;
+      transition: all 0.3s ease;
+  }
+  .navbar .menu.active {
+      left: 0;
+  }
+  .navbar .menu li{
+    margin-top: 2rem;
+  }
+  .navbar .menu li a{
+      text-align: center;
+  }
+  .menu-icon{
+      display: block;
+      text-align: right;
+      margin: -3rem 2rem 0 0;
+  }
+  .menu-icon i.active:before{
+      content: "\f00d";    
+  }
+.submenu{
+  position: relative;
+  text-align: left;
+  padding: 2rem 0rem 4rem 8rem;
+  background: transparent;
+  margin: 0 auto;
+  height: 4rem;
+  width: 20rem;
+}
+
+ .dropdown:hover .submenu:hover{
+  display: block;
+  transition: 0.3s ease-in;
+}
+.submenu li{
+  padding-top: 0;
+  padding-bottom: -1rem;
+  margin-top: -4rem;
+}
+.submenu li a{
+  padding-top:-0.5rem;
+  margin-top: -3.5rem;
+  padding: 0.5rem;
+  padding-bottom: -1rem;
+  border: 1px #ecf solid;
+}
+.submenu li a:hover{
+  background-color: #29103d;
+  transition: 0.3s ease;
+}
+}
+@media only screen and ( max-width: 418px){ 
+}
+/* -------- scroll up button ---------- */
+header{
+  width: 100vw;
+}
+.navbar, .navbar.sticky{
+  width: 100vw;
+}
+.scroll-up-btn{
+  position: fixed;
+  right: 1.3rem;
+  bottom: 8rem; 
+  text-align: center;
+  font-size: 1.5rem;
+  color: #002030;
+  pointer-events: none;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 9999;
+}
+.scroll-up-btn.show{
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.5s ease;
+  z-index: 9999;
+  background: #cccccc;
+  padding: 0.3rem 0.5rem;
+  border-radius: 20px;
+}
+.scroll-up-btn:hover{
+  color: #fff;
+}
+
+
+/*------FOOTER SECTION ------- */
+.footer{
+  display: flex;
+  flex-direction: wrap;
+  background-color: #29103d;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+} 
+.footer-links{
+  padding: 2rem 0;
+}
+.footer-links h2{
+  color: #cccccc;
+}
+.footer-links li{
+  margin: 10px 0;
+  font-size: 1.1rem;
+  list-style: none;
+}
+.footer-links li a{
+  color: #cccccc;
+  border-bottom: none;
+  text-decoration: none;
+}
+.footer-links li a:hover{
+  color: #fff;
+  transition: 0.3s ease;
+}
+.icon-content{
+  margin-top: 5rem;
+  padding: 2rem 0;
+  color: #cccccc;
+}
+.socials{
+  margin-bottom: 1.2rem;
+}
+.icon-content .icon-links a{
+  padding: 0 9px;
+  font-size: 2rem;
+  color: #cccccc;
+}
+.icon-content .icon-links a:hover{
+  color: #fff;
+  transition: 0.3s ease;
+ }
+ .footer-line{
+  width: 9rem;
+  height: 0.1rem;
+  background-color: hsl(0, 0%, 66%);
+  margin-top: 1.2rem;
+  margin-right: 5px;
+ }
+ .copyright p{
+  color: #c8c8c8;
+  font-size: 1.2rem;
+  padding-left: 5px;
+  margin-top: 5px;
+ }

@@ -1,0 +1,169 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+title{
+  font-weight: bold;
+  background-color: #29103d;
+}
+html, body{
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+.register-text-container{
+  margin-top: 0rem;
+  color: #000;
+}
+.register-page-title{
+  margin-top: 5rem;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.register-page-text{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.register-page-text p{
+  margin-top: 1rem;
+  padding: 0.5rem 20%;
+  font-size: 1.2rem;
+}
+
+#more4{
+  display: none;
+}
+#moreBtn4{
+  background: none;
+  padding: 0.3rem 0.5rem;
+  border: none;
+  font-size: 1.3rem;
+  color: #8f8f8f;
+  width: 10rem;
+  align-self: center;
+}
+#moreBtn4:hover{
+  color: #29103d;
+  transition: 0.3s ease;
+}
+.register-contact-links{
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+.register-contact-buttons a{
+  margin: 0 1rem;
+  border: 1px #29103d solid;
+  background-color: #29103d;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+.register-contact-buttons a i{
+  padding: 0 0.2rem;
+  font-weight: bold;
+}
+.register-contact-buttons a:hover{
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #29103d;
+  color: #29103d;
+  transition: 0.3s ease;
+}
+button#registerButton {
+  display: block;
+  background-color: #29103d;
+  margin: 5rem auto 3rem auto;
+  color: #fff;
+  font-size: 1.3rem;
+  width: 9rem;
+}
+button#registerButton:hover{
+  background-color: #ffe365;
+  color: #000;
+  transition: 0.3s ease;
+}
+ form h2{
+  text-align: center;
+}
+
+ form {
+  max-width: 500px;
+  margin: -1rem auto 4rem auto;
+  display: none; /* Hide the form initially */
+}
+
+ label {
+  display: block;
+  margin-top: 10px;
+}
+
+ input[type="text"],
+ input[type="email"],
+ input[type="tel"],
+ textarea,
+ select,
+ button[type="submit"],
+.register-btn {
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
+  font-size: 15px;
+}
+ input[type="text"],
+ input[type="email"],
+ input[type="tel"],
+ textarea,
+ select{
+  border-top: none;
+}
+
+ button[type="submit"] {
+  background-color: #29103d;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+ button[type="submit"]:hover {
+  background-color: #ffe365;
+  color: #000;
+  transition: 0.3s ease;
+  border: 2px #29103d solid;
+}
+
+@media (max-width: 768px) {
+  .register-page-text p{
+    padding: 0.5rem 2rem;
+  }
+ }
+
+@media (max-width: 600px) {
+ form {
+    max-width: 100%;
+    margin: 1rem auto 4rem auto;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 600px) {
+.register-contact-buttons a{
+  margin: 0 0.4rem;
+  border-radius: 0.2rem;
+  padding: 0.3rem;
+}
+.register-contact-buttons a i{
+  margin-right: 0.3rem;
+  font-weight: 600;
+}
+.register-contact-links{
+  display: flex;
+}
+}
+

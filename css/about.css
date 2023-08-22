@@ -1,0 +1,373 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+}
+
+html, body{
+  scroll-behavior: smooth;
+  font-size: 100%;
+  overflow-x: hidden;
+}
+/* ------------- ABOUT NAVIGATION CSS---------- */
+.about-banner{
+    height: 80%;
+    width: 100%;
+    background-image: url('/images/about.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background{
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+}
+.banner-text{
+    color: #fff;
+    margin: 13rem auto;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.text-container, 
+.feedback-text,
+.tutor-contact-links,
+.team{
+    margin: 0 2rem;
+    font-size: 1.2rem;
+}
+.text-container, .process-container{
+    display: flex;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.about-text{
+    width: 400px;
+}
+.about-text h1{
+    font-size: 1.5rem;
+    margin: 2rem  0 1rem 0;
+}
+.about-text p{
+    font-size: 1rem;
+    
+}
+
+.our-value{
+    display: flex;
+    flex-direction: column;
+   margin: 4rem 0;
+   justify-content: center;
+   background-color: #e9ecf3;
+   padding-bottom: 2rem;
+  }
+  .our-value i{
+    background-color: #29103d;
+    color: #ffe365;
+    font-size: 1.8rem;
+    padding: 10px 15px;
+    border-radius: 50%;
+    margin-top: -2.3rem;
+  }
+  .value-title{
+    text-align: center;
+  }
+  .value-title h2{
+    padding: 2rem 1rem;
+    font-weight: normal;
+    font-size: 2rem;
+  }
+  .value-text-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .value-text{
+    display: flex;
+    width: 350px;
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .value-text h3{
+    margin-bottom: 1rem;
+    background-color: #ffe365;
+    width: 45px;
+    padding: 10px;
+    border-radius: 100px;
+    border: 1px solid #29103d;
+    color: #29103d;
+  }
+  .value-text h2{
+    font-weight: normal;
+    padding-bottom: 0.5rem;
+    color: #29103d;
+    font-size: 1.5rem;
+  }
+.mission{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  border: 3px solid #29103d;
+  width: 100%;
+  border-radius: 20px 0 50px 0;
+  padding: 3rem 0;
+  justify-self: center;
+
+}
+
+.mission-text{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+  text-align: center;
+}
+.mission-text i{
+    font-size: 1.8rem;
+    margin-top: -4.5rem;
+    background-color: #f6cd16;
+    padding: 6px;
+    border-radius: 20px;
+}
+.mission-text h1{
+    margin-top: 2rem;
+    font-size: 1.8rem;
+}
+.mission-text p{
+    font-size: 1rem;
+}
+
+.team-content{
+    margin: 3rem 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+.team-header{
+    font-size: 0.8rem;
+}
+.team-members{
+    display: flex;
+    margin: 2rem;
+    flex-wrap: wrap;
+
+}
+.member-card{
+    justify-content: center;
+    margin: 0rem auto;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+    border-radius: 50px 0px 50px 0px;
+}
+.member-card img{
+    width: 50%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 2px #29103d;
+}
+.member-card h3{
+    margin-top: 1rem;
+    color: #29103d;
+    font-size: 1.1rem;
+}
+.member-card p{
+    margin-top: 0.2rem;
+    font-size: 1rem;
+}
+.class-details p{
+    padding: 1rem;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    text-align: left;
+}
+.class-details h1{
+    padding-top: 1rem;
+}
+
+
+/*----FAQ SECTION------*/
+.tag-header{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    background-color: #f5f5f5;
+    padding-top: 3rem;
+    width: 100%;
+}
+.faq-container {
+    padding: 3rem 10%;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    background-color: #f5f5f5;
+    margin: 0 auto;
+}
+
+.faq {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+    margin: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+    font-weight: bold;
+    color: #29103d;
+}
+
+.answer {
+    margin-top: 5px;
+}
+
+.faq-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000;
+}
+/* Visibility of the answer */
+.answer {
+    margin-top: 5px;
+    display: none; /* Hide the answer by default */
+}
+
+.answer.visible {
+    display: block; /* Show the answer when the class "visible" is applied */
+}
+
+.feedback-text{
+    padding: 1rem 20%;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+.tutor-contact-links{
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+}
+.link-details a{
+    margin: 0 0.7rem;
+    color: #fff;
+    background-color: #29103d;
+    border: 1px #29103d solid;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+.link-details a:hover{
+    color: #000;
+    background-color: #ffe365;
+    transition: 0.3s ease;
+}
+.link-details i{
+    margin-right: 0.3rem;
+    font-weight: 600;
+}
+/* Responsive Styles */
+
+@media only screen and ( max-width: 920px){
+    .text-container{
+        display: flex;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        flex-direction: column;
+    }
+    .about-text{
+        font-size: 1.3rem;
+        padding: 0;
+        width: 100%;
+    }
+    .faq-container {
+        padding: 3rem 5%;
+    }
+
+    .feedback-text{
+        padding: 1rem 5%;
+    }
+}
+
+
+@media only screen and ( max-width: 600px){
+    .process-container{
+        display: flex;
+        margin-top: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .process-text{
+        font-size: 1.3rem;
+        width: 70%;
+    }
+    .process-text h1{
+        width: 110%;
+        padding: 2rem;
+      }
+      .faq-container {
+        padding: 3rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    
+    .faq {
+        width: 80%;
+    }
+    .tag-header{
+        font-size: 0.8rem;
+    }
+}
+
+
+@media only screen and ( max-width: 414px){  
+
+    .faq {
+        padding: 8px;
+    }
+    .member-card{
+        width: 80%;
+    }
+    .feedback-text{
+        padding: 1rem 1rem;
+    }
+    .tutor-contact-links{
+        margin: 5rem 0;
+        display: flex;
+        justify-content: center;
+    }
+    .link-details a{
+        margin: 0 0.5rem;
+        color: #29103d;
+        background-color: transparent;
+        border: none;
+        border-radius: 0px;
+        padding: 0px;
+    }
+    .link-details a:hover{
+        color: #ffe365;
+        background-color: transparent;
+        transition: 0.3s ease;
+        font-weight: 600;
+    }
+    .link-details i{
+        margin-right: 0.5rem;
+        font-weight: 600;
+    }
+    
+
+}
